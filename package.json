@@ -4,13 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/serve.mjs",
-    "start": "node scripts/serve.mjs --dir=dist",
-    "build": "node scripts/build.mjs",
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
     "check": "node scripts/check.mjs",
-    "test:browser": "node scripts/browser-check.mjs"
+    "test:browser": "node scripts/browser-check.mjs",
+    "test:refresh": "node scripts/refresh-check.mjs"
   },
   "devDependencies": {
     "playwright": "^1.64.1"
+  },
+  "dependencies": {
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "swiper": "^14.3.0"
   }
 }

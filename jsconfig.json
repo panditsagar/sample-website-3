@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": { "@/*": ["./*"] }
+  },
+  "exclude": ["node_modules", ".next", ".qa", "dist", "out"]
+}

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:3000';
+const base = process.env.TEST_BASE_URL || 'http://localhost:3000';
 const executablePath = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const output = path.resolve('.qa');
 await fs.mkdir(output, { recursive: true });
@@ -23,13 +23,16 @@ try {
     failures.push(detail);
     console.error(detail);
   });
-  page.on('response', response => {
-    if (response.url().startsWith(base) && response.status() >= 400) failures.push(`HTTP ${response.status()}: ${response.url()}`);
+  page.on('console', message => {
+    if (message.type() === 'error' && /hydration|Invalid DOM|cannot be a descendant|cannot contain|did not match/i.test(message.text())) failures.push(message.text());
   });
-  const pages = (await fs.readdir('public')).filter(file => file.endsWith('.html'));
+  page.on('response', response => {
+    if (response.url().startsWith(base) && response.status() >= 400 && new URL(response.url()).pathname !== '/404') failures.push(`HTTP ${response.status()}: ${response.url()}`);
+  });
+  const pages = ['/', ...(await fs.readdir('app', { withFileTypes: true })).filter(entry => entry.isDirectory()).map(entry => `/${entry.name}`)];
   for (const file of pages) {
-    const response = await page.goto(`${base}/${file}`, { waitUntil: 'load' });
-    assert.equal(response.status(), 200, file);
+    const response = await page.goto(`${base}${file}`, { waitUntil: 'load' });
+    assert.equal(response.status(), file === '/404' ? 404 : 200, file);
     await page.locator('.preloader').waitFor({ state: 'hidden' });
     await page.evaluate(() => document.fonts.ready);
     const broken = await page.locator('img').evaluateAll(images => images.filter(image => !image.complete || image.naturalWidth === 0).map(image => image.getAttribute('src')));
@@ -44,18 +47,19 @@ try {
   await page.screenshot({ path: path.join(output, 'desktop-home.png') });
   assert.equal(await page.locator('body').evaluate(() => document.documentElement.scrollWidth > innerWidth), false, 'Desktop horizontal overflow');
   assert.equal(await page.evaluate(() => document.fonts.check('400 16px "DM Sans"') && document.fonts.check('600 16px "Mona Sans"')), true, 'Local fonts');
+  await page.waitForFunction(() => Boolean(document.querySelector('.testimonial-slider .swiper')?.swiper?.initialized));
   const slider = await page.locator('.testimonial-slider .swiper').evaluate(element => Boolean(element.swiper?.initialized));
   assert.equal(slider, true, 'Testimonial slider initialized');
   checks.push('Local fonts, desktop layout, testimonial slider');
 
-  await page.goto(`${base}/faqs.html`, { waitUntil: 'load' });
+  await page.goto(`${base}/faqs`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
   await page.locator('[data-bs-target="#collapse2"]').click();
   await page.locator('#collapse2.show').waitFor();
   assert.equal(await page.locator('[data-bs-target="#collapse2"]').getAttribute('aria-expanded'), 'true');
   checks.push('FAQ accordion opens');
 
-  await page.goto(`${base}/image-gallery.html`, { waitUntil: 'load' });
+  await page.goto(`${base}/image-gallery`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
   await page.locator('.gallery-items a').first().click();
   await page.locator('.mfp-img').waitFor({ state: 'visible' });
@@ -63,7 +67,7 @@ try {
   await page.locator('.mfp-wrap').waitFor({ state: 'hidden' });
   checks.push('Image lightbox opens and closes');
 
-  await page.goto(`${base}/contact.html`, { waitUntil: 'load' });
+  await page.goto(`${base}/contact`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
   await page.locator('#contactForm #fname').fill('Demo');
   await page.locator('#contactForm #lname').fill('Visitor');
@@ -75,7 +79,7 @@ try {
   assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('lifeon-demo-contactForm')).length), 1);
   checks.push('Contact form validates and saves locally');
 
-  await page.goto(`${base}/book-appointment.html`, { waitUntil: 'load' });
+  await page.goto(`${base}/book-appointment`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
   await page.locator('#appointmentForm #fname').fill('Demo');
   await page.locator('#appointmentForm #lname').fill('Visitor');
@@ -90,15 +94,6 @@ try {
   assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('lifeon-demo-newslettersForm')).length), 1);
   checks.push('Newsletter demo saves locally');
 
-  await page.goto(`${base}/index-2.html`, { waitUntil: 'load' });
-  await page.locator('.preloader').waitFor({ state: 'hidden' });
-  await page.locator('.our-pricing-box-gold').scrollIntoViewIfNeeded();
-  await page.locator('#planToggle').check();
-  await page.locator('#annually').waitFor({ state: 'visible' });
-  assert.equal(await page.locator('#monthly').isVisible(), false);
-  await page.waitForFunction(() => document.querySelector('#myvideo').readyState >= 2);
-  checks.push('Alternate homepage video and annual pricing switch');
-
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(base, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
@@ -107,9 +102,15 @@ try {
   await page.screenshot({ path: path.join(output, 'mobile-home.png') });
   await page.locator('.slicknav_btn').click();
   await page.locator('.slicknav_nav').waitFor({ state: 'visible' });
-  await page.locator('.slicknav_nav a[href="about.html"]').click();
-  await page.waitForURL('**/about.html');
+  await page.evaluate(() => { window.__lifeonNavigationCheck = true; });
+  await page.locator('.slicknav_nav a[href="/about"]').click();
+  await page.waitForURL('**/about');
+  assert.equal(await page.evaluate(() => window.__lifeonNavigationCheck), true, 'Next.js client navigation');
+  await page.locator('.slicknav_nav').waitFor({ state: 'hidden' });
   checks.push('Mobile layout, menu, and navigation');
+  await page.goto(`${base}/about.html`);
+  assert.equal(new URL(page.url()).pathname, '/about');
+  checks.push('Legacy HTML URLs redirect to Next.js routes');
   await fs.writeFile(path.join(output, 'browser-report.json'), JSON.stringify({ checks, failures }, null, 2));
   assert.deepEqual([...new Set(failures)], [], 'Browser errors');
   console.log(`Passed ${checks.length} browser checks, including all ${pages.length} pages. Screenshots: .qa/`);

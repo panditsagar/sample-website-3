@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lifeon local clone
 
-## Getting Started
+A local copy of the public [Lifeon template demo](https://html.awaikenthemes.com/lifeon/), retaining its original markup, styling, imagery, fonts, and animation libraries. The original Awaiken author credits are preserved in the source files.
 
-First, run the development server:
+## Run
 
-```bash
+Node.js 22 or newer is recommended. The website itself has no installation step or runtime dependencies.
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open **http://localhost:3000**. Use `npm run dev -- --port=3001` for a different port.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Build and verify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run check
+npm run build
+npm start
+```
 
-## Learn More
+The build copies the complete static website into `dist/`, ready for static hosting. `public/` contains the editable source: HTML pages, `css/custom.css`, JavaScript, images, locally hosted webfonts, and the alternate homepages. All navigation works without a framework router.
 
-To learn more about Next.js, take a look at the following resources:
+For browser checks, run `npm install` followed by `npm run test:browser`. The browser check uses an installed Chrome browser and writes screenshots and its report to `.qa/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Behavior
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Original responsive navigation, scroll effects, sliders, pricing switches, FAQ accordions, and image lightboxes are preserved. Contact, appointment, and newsletter submissions validate fields and save demo entries to this browser's local storage. They do not send email or create a real appointment. Their storage keys begin with `lifeon-demo-`.
 
-## Deploy on Vercel
+Google Maps and YouTube embeds require an internet connection. Fonts and site assets are stored locally. The theme seller's floating purchase/customization panel is omitted.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`scripts/mirror.mjs` records how the public pages and assets were downloaded. `mirror-report.json` lists the downloaded files. No server-side PHP source is included: browser developer tools only expose files sent to the browser.

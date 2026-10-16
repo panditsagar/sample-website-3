@@ -1,0 +1,931 @@
+{
+  "source": "https://html.awaikenthemes.com/lifeon/",
+  "files": [
+    {
+      "path": "css/google-fonts.css",
+      "bytes": 4149
+    },
+    {
+      "path": "index.html",
+      "bytes": 95722
+    },
+    {
+      "path": "fonts/rP2Hp2ywxg089UriCZOIHQ.woff2",
+      "bytes": 62724
+    },
+    {
+      "path": "fonts/rP2Fp2ywxg089UriCZa4Hz-D.woff2",
+      "bytes": 76248
+    },
+    {
+      "path": "fonts/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2",
+      "bytes": 40840
+    },
+    {
+      "path": "fonts/o-0ZIpQmx24alC5A4PNr4C5OaxRsfNNlKbCePevttnOmDyw.woff2",
+      "bytes": 7612
+    },
+    {
+      "path": "fonts/o-0bIpQmx24alC5A4PNB6Ryti20_6n1iPHjc5aHdu2ui.woff2",
+      "bytes": 7152
+    },
+    {
+      "path": "fonts/rP2Hp2ywxg089UriCZ2IHSeH.woff2",
+      "bytes": 31292
+    },
+    {
+      "path": "fonts/o-0ZIpQmx24alC5A4PNr4C5OaxRsfNNlKbCePevtt3OmDyw.woff2",
+      "bytes": 16148
+    },
+    {
+      "path": "fonts/o-0ZIpQmx24alC5A4PNr4C5OaxRsfNNlKbCePevtuXOm.woff2",
+      "bytes": 41812
+    },
+    {
+      "path": "fonts/o-0bIpQmx24alC5A4PNB6Ryti20_6n1iPHjc5a7duw.woff2",
+      "bytes": 39788
+    },
+    {
+      "path": "fonts/o-0bIpQmx24alC5A4PNB6Ryti20_6n1iPHjc5aDdu2ui.woff2",
+      "bytes": 15524
+    },
+    {
+      "path": "images/favicon.png",
+      "bytes": 1344
+    },
+    {
+      "path": "css/slicknav.min.css",
+      "bytes": 2505
+    },
+    {
+      "path": "css/all.min.css",
+      "bytes": 75736
+    },
+    {
+      "path": "css/animate.css",
+      "bytes": 73589
+    },
+    {
+      "path": "css/swiper-bundle.min.css",
+      "bytes": 18429
+    },
+    {
+      "path": "css/bootstrap.min.css",
+      "bytes": 232757
+    },
+    {
+      "path": "images/loader.svg",
+      "bytes": 6407
+    },
+    {
+      "path": "css/mousecursor.css",
+      "bytes": 6892
+    },
+    {
+      "path": "css/magnific-popup.css",
+      "bytes": 6951
+    },
+    {
+      "path": "images/logo.svg",
+      "bytes": 10653
+    },
+    {
+      "path": "index-2.html",
+      "bytes": 115747
+    },
+    {
+      "path": "index-3.html",
+      "bytes": 96676
+    },
+    {
+      "path": "about.html",
+      "bytes": 73593
+    },
+    {
+      "path": "css/custom.css",
+      "bytes": 216916
+    },
+    {
+      "path": "blog.html",
+      "bytes": 24313
+    },
+    {
+      "path": "blog-single.html",
+      "bytes": 19883
+    },
+    {
+      "path": "team-single.html",
+      "bytes": 31516
+    },
+    {
+      "path": "team.html",
+      "bytes": 22891
+    },
+    {
+      "path": "service-single.html",
+      "bytes": 36020
+    },
+    {
+      "path": "services.html",
+      "bytes": 66968
+    },
+    {
+      "path": "case-study.html",
+      "bytes": 21554
+    },
+    {
+      "path": "case-study-single.html",
+      "bytes": 34463
+    },
+    {
+      "path": "video-gallery.html",
+      "bytes": 19051
+    },
+    {
+      "path": "contact.html",
+      "bytes": 22058
+    },
+    {
+      "path": "image-gallery.html",
+      "bytes": 18882
+    },
+    {
+      "path": "404.html",
+      "bytes": 14644
+    },
+    {
+      "path": "faqs.html",
+      "bytes": 51552
+    },
+    {
+      "path": "book-appointment.html",
+      "bytes": 63950
+    },
+    {
+      "path": "pricing.html",
+      "bytes": 64728
+    },
+    {
+      "path": "testimonials.html",
+      "bytes": 61467
+    },
+    {
+      "path": "images/author-1.jpg",
+      "bytes": 6154
+    },
+    {
+      "path": "images/author-3.jpg",
+      "bytes": 6582
+    },
+    {
+      "path": "images/author-2.jpg",
+      "bytes": 6544
+    },
+    {
+      "path": "images/icon-about-us-item-1.svg",
+      "bytes": 1103
+    },
+    {
+      "path": "images/icon-about-us-item-2.svg",
+      "bytes": 1255
+    },
+    {
+      "path": "images/icon-service-1.svg",
+      "bytes": 919
+    },
+    {
+      "path": "images/about-us-image-1.jpg",
+      "bytes": 63312
+    },
+    {
+      "path": "images/about-us-image-2.jpg",
+      "bytes": 101563
+    },
+    {
+      "path": "images/icon-service-2.svg",
+      "bytes": 1962
+    },
+    {
+      "path": "images/icon-service-3.svg",
+      "bytes": 1426
+    },
+    {
+      "path": "images/why-choose-content-image.png",
+      "bytes": 4066
+    },
+    {
+      "path": "images/why-choose-image-2.jpg",
+      "bytes": 83004
+    },
+    {
+      "path": "images/expertise-image-2.jpg",
+      "bytes": 70921
+    },
+    {
+      "path": "images/experience-circle.svg",
+      "bytes": 40991
+    },
+    {
+      "path": "images/expertise-image-1.jpg",
+      "bytes": 124846
+    },
+    {
+      "path": "images/why-choose-image-1.jpg",
+      "bytes": 96746
+    },
+    {
+      "path": "images/why-choose-logo-1.svg",
+      "bytes": 8337
+    },
+    {
+      "path": "images/icon-why-choose-cta.svg",
+      "bytes": 1460
+    },
+    {
+      "path": "images/why-choose-logo-4.svg",
+      "bytes": 3036
+    },
+    {
+      "path": "images/why-choose-logo-3.svg",
+      "bytes": 13105
+    },
+    {
+      "path": "images/why-choose-logo-2.svg",
+      "bytes": 5785
+    },
+    {
+      "path": "images/why-choose-image-3.jpg",
+      "bytes": 86508
+    },
+    {
+      "path": "images/case-study-1.jpg",
+      "bytes": 106373
+    },
+    {
+      "path": "images/case-study-2.jpg",
+      "bytes": 96452
+    },
+    {
+      "path": "images/icon-phone-white.svg",
+      "bytes": 1198
+    },
+    {
+      "path": "images/icon-how-work-item-1.svg",
+      "bytes": 730
+    },
+    {
+      "path": "images/icon-pricing-benefit-1.svg",
+      "bytes": 542
+    },
+    {
+      "path": "images/icon-how-work-item-3.svg",
+      "bytes": 1478
+    },
+    {
+      "path": "images/icon-pricing-benefit-2.svg",
+      "bytes": 724
+    },
+    {
+      "path": "images/icon-how-work-item-2.svg",
+      "bytes": 800
+    },
+    {
+      "path": "images/how-it-work-image.jpg",
+      "bytes": 83878
+    },
+    {
+      "path": "images/case-study-3.jpg",
+      "bytes": 97705
+    },
+    {
+      "path": "images/icon-pricing-benefit-3.svg",
+      "bytes": 244
+    },
+    {
+      "path": "images/icon-google.svg",
+      "bytes": 1385
+    },
+    {
+      "path": "images/arrow-white.svg",
+      "bytes": 220
+    },
+    {
+      "path": "images/testimonials-image.jpg",
+      "bytes": 80996
+    },
+    {
+      "path": "images/post-1.jpg",
+      "bytes": 80398
+    },
+    {
+      "path": "images/post-3.jpg",
+      "bytes": 83668
+    },
+    {
+      "path": "images/post-2.jpg",
+      "bytes": 120704
+    },
+    {
+      "path": "images/book-appointment-image.jpg",
+      "bytes": 149119
+    },
+    {
+      "path": "js/validator.min.js",
+      "bytes": 7729
+    },
+    {
+      "path": "js/jquery.counterup.min.js",
+      "bytes": 1057
+    },
+    {
+      "path": "js/jquery.waypoints.min.js",
+      "bytes": 9028
+    },
+    {
+      "path": "js/bootstrap.min.js",
+      "bytes": 60593
+    },
+    {
+      "path": "js/jquery.slicknav.js",
+      "bytes": 21205
+    },
+    {
+      "path": "js/jquery.magnific-popup.min.js",
+      "bytes": 20735
+    },
+    {
+      "path": "js/jquery-3.7.1.min.js",
+      "bytes": 87532
+    },
+    {
+      "path": "js/swiper-bundle.min.js",
+      "bytes": 148425
+    },
+    {
+      "path": "js/magiccursor.js",
+      "bytes": 3720
+    },
+    {
+      "path": "js/parallaxie.js",
+      "bytes": 2033
+    },
+    {
+      "path": "js/SplitText.min.js",
+      "bytes": 7247
+    },
+    {
+      "path": "js/SmoothScroll.js",
+      "bytes": 24489
+    },
+    {
+      "path": "js/wow.min.js",
+      "bytes": 8155
+    },
+    {
+      "path": "js/gsap.min.js",
+      "bytes": 72435
+    },
+    {
+      "path": "js/ScrollTrigger.min.js",
+      "bytes": 43380
+    },
+    {
+      "path": "js/jquery.mb.YTPlayer.min.js",
+      "bytes": 64021
+    },
+    {
+      "path": "images/icon-hero-body-item-1-gold.svg",
+      "bytes": 1695
+    },
+    {
+      "path": "webfonts/fa-v4compatibility.woff2",
+      "bytes": 4568
+    },
+    {
+      "path": "images/icon-asterisk-white.svg",
+      "bytes": 591
+    },
+    {
+      "path": "webfonts/fa-regular-400.woff2",
+      "bytes": 24488
+    },
+    {
+      "path": "js/function.js",
+      "bytes": 11111
+    },
+    {
+      "path": "webfonts/fa-solid-900.woff2",
+      "bytes": 150020
+    },
+    {
+      "path": "webfonts/fa-brands-400.woff2",
+      "bytes": 109808
+    },
+    {
+      "path": "images/icon-service-1-gold.svg",
+      "bytes": 1212
+    },
+    {
+      "path": "images/icon-about-us-item-1-gold.svg",
+      "bytes": 1194
+    },
+    {
+      "path": "images/icon-service-3-gold.svg",
+      "bytes": 1910
+    },
+    {
+      "path": "images/icon-service-2-gold.svg",
+      "bytes": 978
+    },
+    {
+      "path": "images/why-choose-image-1-gold.jpg",
+      "bytes": 32776
+    },
+    {
+      "path": "images/why-choose-image-2-gold.jpg",
+      "bytes": 172955
+    },
+    {
+      "path": "images/about-us-image-2-gold.jpg",
+      "bytes": 223212
+    },
+    {
+      "path": "images/about-us-image-1-gold.jpg",
+      "bytes": 223810
+    },
+    {
+      "path": "images/icon-interactive-process-item-1-gold.svg",
+      "bytes": 1419
+    },
+    {
+      "path": "images/icon-interactive-process-item-2-gold.svg",
+      "bytes": 1872
+    },
+    {
+      "path": "images/icon-why-choose-list-1-gold.svg",
+      "bytes": 2386
+    },
+    {
+      "path": "images/icon-interactive-process-item-4-gold.svg",
+      "bytes": 1257
+    },
+    {
+      "path": "images/icon-interactive-process-item-3-gold.svg",
+      "bytes": 1192
+    },
+    {
+      "path": "images/core-feature-title-image-gold.jpg",
+      "bytes": 13624
+    },
+    {
+      "path": "images/why-choose-body-image-gold.jpg",
+      "bytes": 102279
+    },
+    {
+      "path": "images/core-feature-image-gold.jpg",
+      "bytes": 120758
+    },
+    {
+      "path": "images/icon-how-work-item-1-gold.svg",
+      "bytes": 972
+    },
+    {
+      "path": "images/icon-how-work-item-2-gold.svg",
+      "bytes": 1727
+    },
+    {
+      "path": "images/icon-core-feature-item-1-gold.svg",
+      "bytes": 1689
+    },
+    {
+      "path": "images/icon-how-work-item-3-gold.svg",
+      "bytes": 1259
+    },
+    {
+      "path": "images/author-4.jpg",
+      "bytes": 8196
+    },
+    {
+      "path": "images/testimonial-quote-gold.svg",
+      "bytes": 2055
+    },
+    {
+      "path": "images/benefit-image-gold.png",
+      "bytes": 51545
+    },
+    {
+      "path": "images/benefit-satisfaction-image-gold.png",
+      "bytes": 169100
+    },
+    {
+      "path": "images/author-5.jpg",
+      "bytes": 7657
+    },
+    {
+      "path": "images/icon-phone-accent-secondary.svg",
+      "bytes": 1221
+    },
+    {
+      "path": "images/icon-location-accent-secondary.svg",
+      "bytes": 796
+    },
+    {
+      "path": "images/icon-hero-footer-item-1-silver.svg",
+      "bytes": 1483
+    },
+    {
+      "path": "images/interactive-process-image-1-gold.jpg",
+      "bytes": 153339
+    },
+    {
+      "path": "images/interactive-process-image-4-gold.jpg",
+      "bytes": 204407
+    },
+    {
+      "path": "images/interactive-process-image-2-gold.jpg",
+      "bytes": 276170
+    },
+    {
+      "path": "images/interactive-process-image-3-gold.jpg",
+      "bytes": 197540
+    },
+    {
+      "path": "images/icon-about-counter-item-1-silver.svg",
+      "bytes": 1215
+    },
+    {
+      "path": "images/experience-circle-silver.svg",
+      "bytes": 40949
+    },
+    {
+      "path": "images/service-1-silver.jpg",
+      "bytes": 128735
+    },
+    {
+      "path": "images/service-3-silver.jpg",
+      "bytes": 109263
+    },
+    {
+      "path": "images/service-2-silver.jpg",
+      "bytes": 293600
+    },
+    {
+      "path": "images/why-choose-image-silver.jpg",
+      "bytes": 323494
+    },
+    {
+      "path": "images/why-choose-expert-image-silver.png",
+      "bytes": 75216
+    },
+    {
+      "path": "images/about-us-image-silver.jpg",
+      "bytes": 242622
+    },
+    {
+      "path": "images/icon-why-choose-body-item-2-silver.svg",
+      "bytes": 1875
+    },
+    {
+      "path": "images/icon-benefit-item-1-silver.svg",
+      "bytes": 1426
+    },
+    {
+      "path": "images/icon-why-choose-body-item-1-silver.svg",
+      "bytes": 1514
+    },
+    {
+      "path": "images/icon-benefit-satisfaction-1-silver.svg",
+      "bytes": 1692
+    },
+    {
+      "path": "images/icon-benefit-item-2-silver.svg",
+      "bytes": 1353
+    },
+    {
+      "path": "images/core-feature-image-1-silver.jpg",
+      "bytes": 58184
+    },
+    {
+      "path": "images/benefit-image-silver.png",
+      "bytes": 98527
+    },
+    {
+      "path": "images/core-feature-image-2-silver.jpg",
+      "bytes": 230580
+    },
+    {
+      "path": "images/icon-core-features-item-2-silver.svg",
+      "bytes": 1693
+    },
+    {
+      "path": "images/icon-pricing-1-silver.svg",
+      "bytes": 1265
+    },
+    {
+      "path": "images/icon-core-features-item-1-silver.svg",
+      "bytes": 984
+    },
+    {
+      "path": "images/icon-pricing-3-silver.svg",
+      "bytes": 1868
+    },
+    {
+      "path": "images/icon-pricing-2-silver.svg",
+      "bytes": 1463
+    },
+    {
+      "path": "images/team-1.jpg",
+      "bytes": 88021
+    },
+    {
+      "path": "images/team-2.jpg",
+      "bytes": 86318
+    },
+    {
+      "path": "images/team-3.jpg",
+      "bytes": 87283
+    },
+    {
+      "path": "images/icon-headphone-white.svg",
+      "bytes": 2743
+    },
+    {
+      "path": "images/icon-approach-item-1.svg",
+      "bytes": 1334
+    },
+    {
+      "path": "images/how-work-image-1-silver.jpg",
+      "bytes": 55620
+    },
+    {
+      "path": "images/how-work-image-2-silver.jpg",
+      "bytes": 55329
+    },
+    {
+      "path": "images/faqs-image-silver.jpg",
+      "bytes": 80870
+    },
+    {
+      "path": "images/how-work-image-3-silver.jpg",
+      "bytes": 63642
+    },
+    {
+      "path": "images/approach-image.jpg",
+      "bytes": 238661
+    },
+    {
+      "path": "images/testimonial-cta-image-silver.jpg",
+      "bytes": 201501
+    },
+    {
+      "path": "images/icon-approach-item-2.svg",
+      "bytes": 902
+    },
+    {
+      "path": "images/icon-benefit-item-1.svg",
+      "bytes": 1408
+    },
+    {
+      "path": "images/icon-approach-item-3.svg",
+      "bytes": 1255
+    },
+    {
+      "path": "images/icon-benefit-item-2.svg",
+      "bytes": 1157
+    },
+    {
+      "path": "images/icon-mail-white.svg",
+      "bytes": 669
+    },
+    {
+      "path": "images/icon-benefit-item-3.svg",
+      "bytes": 759
+    },
+    {
+      "path": "images/dark-section-bg-image.png",
+      "bytes": 80769
+    },
+    {
+      "path": "images/hero-bg-image.jpg",
+      "bytes": 134239
+    },
+    {
+      "path": "images/arrow-primary.svg",
+      "bytes": 222
+    },
+    {
+      "path": "images/our-services-bg-image.png",
+      "bytes": 33199
+    },
+    {
+      "path": "images/image-corner-bg-shape.svg",
+      "bytes": 1472
+    },
+    {
+      "path": "images/about-us-bg-image-gold.png",
+      "bytes": 500
+    },
+    {
+      "path": "images/icon-blockquote.svg",
+      "bytes": 876
+    },
+    {
+      "path": "images/pricing-swich-circle.svg",
+      "bytes": 158
+    },
+    {
+      "path": "images/page-header-bg.jpg",
+      "bytes": 110417
+    },
+    {
+      "path": "images/intro-video-bg-image.jpg",
+      "bytes": 133021
+    },
+    {
+      "path": "images/how-work-item-arrow-silver.svg",
+      "bytes": 258
+    },
+    {
+      "path": "images/testimonial-quote-silver.svg",
+      "bytes": 2056
+    },
+    {
+      "path": "images/about-us-item-bg-silver.png",
+      "bytes": 13276
+    },
+    {
+      "path": "images/faqs-bg-image-1-gold.png",
+      "bytes": 24953
+    },
+    {
+      "path": "images/faqs-bg-image-gold.png",
+      "bytes": 43333
+    },
+    {
+      "path": "images/footer-bg-image-silver.png",
+      "bytes": 15174
+    },
+    {
+      "path": "images/benefit-image-box-bg-silver.png",
+      "bytes": 37964
+    },
+    {
+      "path": "images/hero-bg-image-silver.jpg",
+      "bytes": 195875
+    },
+    {
+      "path": "images/icon-location-white.svg",
+      "bytes": 805
+    },
+    {
+      "path": "images/icon-position.svg",
+      "bytes": 1473
+    },
+    {
+      "path": "images/post-5.jpg",
+      "bytes": 90685
+    },
+    {
+      "path": "images/post-6.jpg",
+      "bytes": 98520
+    },
+    {
+      "path": "images/team-4.jpg",
+      "bytes": 92647
+    },
+    {
+      "path": "images/team-5.jpg",
+      "bytes": 91474
+    },
+    {
+      "path": "images/sidebar-cta-box-image.jpg",
+      "bytes": 188487
+    },
+    {
+      "path": "images/post-4.jpg",
+      "bytes": 94454
+    },
+    {
+      "path": "images/icon-service-focus-item-2.svg",
+      "bytes": 1288
+    },
+    {
+      "path": "images/icon-service-focus-item-1.svg",
+      "bytes": 1408
+    },
+    {
+      "path": "images/icon-service-4.svg",
+      "bytes": 1130
+    },
+    {
+      "path": "images/service-focus-image-1.jpg",
+      "bytes": 74938
+    },
+    {
+      "path": "images/service-single-image.jpg",
+      "bytes": 98854
+    },
+    {
+      "path": "images/team-6.jpg",
+      "bytes": 102757
+    },
+    {
+      "path": "images/service-focus-image-2.jpg",
+      "bytes": 100655
+    },
+    {
+      "path": "images/service-process-video-image.jpg",
+      "bytes": 170687
+    },
+    {
+      "path": "images/icon-service-6.svg",
+      "bytes": 730
+    },
+    {
+      "path": "images/icon-case-study-result-2.svg",
+      "bytes": 759
+    },
+    {
+      "path": "images/icon-case-study-result-1.svg",
+      "bytes": 1408
+    },
+    {
+      "path": "images/icon-service-5.svg",
+      "bytes": 603
+    },
+    {
+      "path": "images/icon-case-study-result-3.svg",
+      "bytes": 1288
+    },
+    {
+      "path": "images/case-study-6.jpg",
+      "bytes": 90313
+    },
+    {
+      "path": "images/case-study-5.jpg",
+      "bytes": 92764
+    },
+    {
+      "path": "images/case-study-4.jpg",
+      "bytes": 141149
+    },
+    {
+      "path": "images/case-study-challenge-image-2.jpg",
+      "bytes": 180483
+    },
+    {
+      "path": "images/case-study-challenge-image-1.jpg",
+      "bytes": 147636
+    },
+    {
+      "path": "images/gallery-1.jpg",
+      "bytes": 91738
+    },
+    {
+      "path": "images/gallery-3.jpg",
+      "bytes": 102373
+    },
+    {
+      "path": "images/gallery-4.jpg",
+      "bytes": 117249
+    },
+    {
+      "path": "images/gallery-5.jpg",
+      "bytes": 115185
+    },
+    {
+      "path": "images/gallery-2.jpg",
+      "bytes": 94496
+    },
+    {
+      "path": "images/gallery-9.jpg",
+      "bytes": 96746
+    },
+    {
+      "path": "images/author-6.jpg",
+      "bytes": 6538
+    },
+    {
+      "path": "images/404-error-img.png",
+      "bytes": 24696
+    },
+    {
+      "path": "images/gallery-7.jpg",
+      "bytes": 81498
+    },
+    {
+      "path": "images/gallery-6.jpg",
+      "bytes": 97128
+    },
+    {
+      "path": "images/gallery-8.jpg",
+      "bytes": 155753
+    },
+    {
+      "path": "images/hero-video-gold.mp4",
+      "bytes": 1080821
+    }
+  ],
+  "failures": [],
+  "notes": ["The unused hero-bg-video.mp4 reference appears only in an HTML comment and is not required. The active alternate-homepage video was downloaded from https://demo.awaikenthemes.com/assets/videos/Lifeon-hero-video-gold.mp4."]
+}

@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Page not found</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Page not found</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -46,11 +47,11 @@ return (<>
                     </div>
                     <div className="error-page-content">
                         <div className="section-title">
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Oops! page not found</h2>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Oops! page not found</AnimatedText>
                         </div>
                         <div className="error-page-content-body">
-                            <p className="wow fadeInUp">The page you are looking for does not exist.</p>
-                            <Link className="btn-default wow fadeInUp" href="/">Back to Homepage</Link>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">The page you are looking for does not exist.</p>
+                            <Link className="btn-default wow fadeInUp" href="/" data-wow-delay="0.4s">Back to Homepage</Link>
                         </div>
                     </div>
                 </div>

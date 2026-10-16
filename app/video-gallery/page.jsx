@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Our video</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Our video</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -54,7 +55,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="0.2s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-5.jpg" alt="" />
@@ -66,7 +67,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="0.4s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-2.jpg" alt="" />
@@ -78,7 +79,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="0.6s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-1.jpg" alt="" />
@@ -90,7 +91,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="0.8s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-4.jpg" alt="" />
@@ -102,7 +103,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="1s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-9.jpg" alt="" />
@@ -114,7 +115,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="1.2s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-6.jpg" alt="" />
@@ -126,7 +127,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="1.4s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-8.jpg" alt="" />
@@ -138,7 +139,7 @@ return (<>
 
                 <div className="col-lg-4 col-md-6">
                     {/* Video Gallery start */}
-                    <div className="video-gallery-image wow fadeInUp">
+                    <div className="video-gallery-image wow fadeInUp" data-wow-delay="1.6s">
                         <VideoLink href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video" data-cursor-text="Play">
                             <figure>
                                 <img src="/images/gallery-7.jpg" alt="" />

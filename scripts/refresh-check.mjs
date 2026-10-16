@@ -11,7 +11,7 @@ const originalCSS = await fs.readFile(stylePath, 'utf8');
 const heading = 'Unlock your full potential and achieve success';
 const browser = await chromium.launch({ executablePath, headless: true });
 try {
-  const page = await browser.newPage({ reducedMotion: 'reduce' });
+  const page = await browser.newPage({ reducedMotion: 'no-preference' });
   const failures = [];
   page.on('pageerror', error => failures.push(error.message));
   await page.goto(base, { waitUntil: 'networkidle' });

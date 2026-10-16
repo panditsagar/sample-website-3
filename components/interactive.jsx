@@ -13,11 +13,11 @@ export function Accordion({ children, ...props }) {
   return <AccordionContext.Provider value={{ activeId, setActiveId }}><div {...props}>{children}</div></AccordionContext.Provider>;
 }
 
-export function AccordionItem({ id, headingId, title, className, children }) {
+export function AccordionItem({ id, headingId, title, className, children, defaultOpen, ...props }) {
   const { activeId, setActiveId } = useContext(AccordionContext);
   const open = activeId === id;
   return (
-    <div className={className}>
+    <div {...props} className={className}>
       <h2 className="accordion-header" id={headingId}>
         <button className={`accordion-button${open ? '' : ' collapsed'}`} type="button" data-bs-target={`#${id}`} aria-expanded={open} aria-controls={id} onClick={() => setActiveId(open ? null : id)}>{title}</button>
       </h2>
@@ -50,8 +50,8 @@ export function Counter({ value, ...props }) {
       observer.disconnect();
       const start = performance.now();
       const tick = now => {
-        const progress = Math.min((now - start) / 1800, 1);
-        setDisplay((target * (1 - Math.pow(1 - progress, 3))).toFixed(decimals));
+        const progress = Math.min((now - start) / 3000, 1);
+        setDisplay(progress === 1 ? value : (target * progress).toFixed(decimals));
         if (progress < 1) frame = requestAnimationFrame(tick);
       };
       frame = requestAnimationFrame(tick);

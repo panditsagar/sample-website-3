@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Contact us</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Contact us</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -46,8 +47,8 @@ return (<>
                         {/* Section Title Start */}
                         <div className="section-title section-title-center">
                             <span className="section-sub-title wow fadeInUp">Contact Us</span>
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Contact our experts for guidance today</h2>
-                            <p className="wow fadeInUp">Our experienced coaches are here to provide the guidance and support you need to move forward with confidence.</p>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Contact our experts for guidance today</AnimatedText>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">Our experienced coaches are here to provide the guidance and support you need to move forward with confidence.</p>
                         </div>
                         {/* Section Title End */}
 
@@ -60,7 +61,7 @@ return (<>
                             {/* Contact Info List Title End */}
 
                             {/* Conatct Info Item Start */}
-                            <div className="contact-info-item wow fadeInUp">
+                            <div className="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="icon-box">
                                     <img src="/images/icon-headphone-white.svg" alt="" />
                                 </div>
@@ -72,7 +73,7 @@ return (<>
                             {/* Conatct Info Item End */}
 
                             {/* Conatct Info Item Start */}
-                            <div className="contact-info-item wow fadeInUp">
+                            <div className="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div className="icon-box">
                                     <img src="/images/icon-mail-white.svg" alt="" />
                                 </div>
@@ -84,7 +85,7 @@ return (<>
                             {/* Conatct Info Item End */}
 
                             {/* Conatct Info Item Start */}
-                            <div className="contact-info-item wow fadeInUp">
+                            <div className="contact-info-item wow fadeInUp" data-wow-delay="0.6s">
                                 <div className="icon-box">
                                     <img src="/images/icon-location-white.svg" alt="" />
                                 </div>
@@ -105,13 +106,13 @@ return (<>
                     <div className="contact-us-form">
                         {/* Section Title Start */}
                         <div className="section-title">
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Let's get in touch</h2>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Let's get in touch</AnimatedText>
                             <p className="wow fadeInUp">We'd love to hear from you. Whether you have questions, ready to start your coaching journey, our team is here to help.</p>
                         </div>
                         {/* Section Title End */}
 
                         {/* Contact Form Start */}
-                        <DemoForm id="contactForm" action="#" method="POST" className="contact-form wow fadeInUp">
+                        <DemoForm id="contactForm" action="#" method="POST" className="contact-form wow fadeInUp" data-wow-delay="0.2s">
                             <div className="row">
                                 <div className="form-group col-md-6 mb-4">
                                     <input type="text" name="fname" className="form-control" id="fname" placeholder="Enter First Name *" required aria-label="Enter First Name *" />
@@ -161,8 +162,8 @@ return (<>
                     {/* Section Title Start */}
                     <div className="section-title section-title-center">
                         <span className="section-sub-title wow fadeInUp">Our Location</span>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">Let's connect, in person or online</h2>
-                        <p className="wow fadeInUp">Visit our office, give us a call, or send us a message however you prefer to connect, our team is always ready to discuss your project and answer your questions.</p>
+                        <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Let's connect, in person or online</AnimatedText>
+                        <p className="wow fadeInUp" data-wow-delay="0.2s">Visit our office, give us a call, or send us a message however you prefer to connect, our team is always ready to discuss your project and answer your questions.</p>
                     </div>
                     {/* Section Title End */}
                 </div>
@@ -171,7 +172,7 @@ return (<>
             <div className="row">
                 <div className="col-lg-12">
                     {/* Google Map IFrame Start */}
-                    <div className="google-map-iframe wow fadeInUp">
+                    <div className="google-map-iframe wow fadeInUp" data-wow-delay="0.4s">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Location map"></iframe>
                     </div>
                     {/* Google Map IFrame End */}

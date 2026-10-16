@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -10,7 +11,7 @@ return (<footer className="main-footer bg-section dark-section">
                     <div className="footer-header">
                         {/* Section Title Start */}
                         <div className="section-title">
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Sign up for newsletter</h2>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Sign up for newsletter</AnimatedText>
                             <p className="wow fadeInUp">Subscribe to our newsletter for expert insights, growth.</p>
                         </div>
                         {/* Section Title End */}

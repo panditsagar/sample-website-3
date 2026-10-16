@@ -9,12 +9,15 @@
     "build": "next build",
     "check": "node scripts/check.mjs",
     "test:browser": "node scripts/browser-check.mjs",
-    "test:refresh": "node scripts/refresh-check.mjs"
+    "test:refresh": "node scripts/refresh-check.mjs",
+    "test:animations": "node scripts/animation-check.mjs",
+    "test:scroll": "node scripts/scroll-check.mjs"
   },
   "devDependencies": {
     "playwright": "^1.64.1"
   },
   "dependencies": {
+    "gsap": "^3.15.0",
     "next": "^16.4.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",

@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Our team</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Our team</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -70,7 +71,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>
@@ -98,7 +99,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>
@@ -154,7 +155,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>
@@ -182,7 +183,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>

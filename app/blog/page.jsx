@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Our blog</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Our blog</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -234,7 +235,7 @@ return (<>
 
                 <div className="col-lg-12">
                     {/* Page Pagination Start */}
-                    <div className="page-pagination wow fadeInUp">
+                    <div className="page-pagination wow fadeInUp" data-wow-delay="0.4s">
                         <ul className="pagination">
                             <li><a href="#"><i className="fa-solid fa-angle-left"></i></a></li>
                             <li className="active"><a href="#">1</a></li>

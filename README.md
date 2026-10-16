@@ -32,6 +32,7 @@ If another server is using that port, stop it or run `npm run dev -- --port 3001
 | Shared footer | `components/SiteFooter.jsx` |
 | Forms, sliders, FAQs, gallery, and video popups | `components/interactive.jsx` |
 | Scroll animations and cursor effects | `components/PageEffects.jsx` |
+| Staggered heading animations | `components/AnimatedText.jsx` |
 | Images, fonts, and vendor styles | `public/` |
 
 `public/` holds assets, not duplicate HTML pages. The old `dist/` workflow is removed. Next.js uses the ignored `.next/` directory for generated files; do not edit it.
@@ -60,9 +61,15 @@ With `npm run dev` running in another terminal:
 
 ```sh
 npm run test:browser
+npm run test:animations
+npm run test:scroll
 npm run test:refresh
 ```
 
 Browser checks use installed Google Chrome on Windows. Override `CHROME_PATH` for another installation and `TEST_BASE_URL` for another server URL. Screenshots and reports are written to `.qa/`. The refresh check temporarily edits and then restores the homepage and stylesheet to verify automatic updates.
+
+GSAP restores the template's letter-by-letter headings, delayed entrances, image reveals, desktop parallax, skill bars, and smooth cursor. These effects clean up on navigation and Fast Refresh. Animation checks run with motion enabled and also verify reduced-motion behavior.
+
+Desktop wheel and keyboard scrolling use the original SmoothScroll pulse easing (600ms), adapted in `lib/smooth-scroll.js` for Next.js lifecycle cleanup. Mobile touch scrolling stays native, and reduced-motion preferences disable the custom easing. Original SmoothScroll author and license credits are retained in that file.
 
 Contact, appointment, and newsletter forms still save demo entries in this browser's local storage (`lifeon-demo-*`). They do not send email or create real appointments. Google Maps and YouTube embeds require internet access. The original author credits remain in the stylesheet.

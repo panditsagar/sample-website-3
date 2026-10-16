@@ -1,9 +1,10 @@
 /* React behavior layered over the original Lifeon template styles. */
 .parallaxie { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .reveal { visibility: visible; }
-[data-reveal="pending"] { opacity: 0; }
-[data-reveal="visible"] { animation: lifeon-reveal 700ms ease both; }
-@keyframes lifeon-reveal { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animation-word { display: inline-block; white-space: nowrap; }
+.animation-char { display: inline-block; }
+.preloader { transition: opacity 600ms ease; }
+.preloader.is-leaving { opacity: 0; pointer-events: none; }
 .navbar-toggle button { border: 0; }
 .navbar-toggle .slicknav_icon { margin: 0; }
 .navbar-toggle button.slicknav_open .slicknav_icon-bar:nth-child(1) { transform: rotate(-45deg) translate(-5px, 5px); }
@@ -11,7 +12,7 @@
 .navbar-toggle button.slicknav_open .slicknav_icon-bar:nth-child(3) { transform: rotate(45deg) translate(-5px, -5px); }
 .responsive-menu [hidden] { display: none; }
 .local-form-status { margin-top: 16px; line-height: 1.6; color: inherit; }
-.cb-cursor { transition: transform 80ms ease-out; }
+.cb-cursor { transition: none; }
 .lifeon-media-dialog { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; gap: 20px; padding: 64px 24px 24px; background: #000d; z-index: 10000; }
 .lifeon-media-dialog .mfp-close { position: absolute; top: 10px; right: 16px; color: white; opacity: 1; }
 .lifeon-media-dialog figure { margin: 0; max-width: min(100%, 1100px); text-align: center; }
@@ -19,8 +20,12 @@
 .lifeon-media-dialog figcaption { color: white; padding-top: 12px; font-size: 14px; }
 .lifeon-gallery-previous, .lifeon-gallery-next { border: 0; background: none; color: white; font-size: 48px; line-height: 1; flex-shrink: 0; }
 .lifeon-media-dialog iframe { width: min(1100px, 90vw); aspect-ratio: 16 / 9; border: 0; background: black; }
+.lifeon-media-dialog { animation: lifeon-popup-fade 160ms ease both; }
+.lifeon-media-dialog .mfp-img { animation: lifeon-gallery-zoom 300ms ease both; }
+@keyframes lifeon-popup-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lifeon-gallery-zoom { from { transform: scale(0.92); } to { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) {
-  [data-reveal] { opacity: 1; animation: none; }
+  .lifeon-media-dialog, .lifeon-media-dialog .mfp-img, .loading { animation: none; }
   *, *::before, *::after { scroll-behavior: auto !important; }
   .cb-cursor { transition: none; }
 }

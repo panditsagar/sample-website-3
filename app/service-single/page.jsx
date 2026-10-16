@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Executive leadership coaching</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Executive leadership coaching</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -58,7 +59,7 @@ return (<>
                         {/* Page Category List End */}
                         
                         {/* Sidebar CTA Box Start */}
-                        <div className="sidebar-cta-box wow fadeInUp">
+                        <div className="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
                             {/* Sidebar CTA Box Image Start */}
                             <div className="sidebar-cta-box-image">
                                 <figure className="image-anime">
@@ -114,15 +115,15 @@ return (<>
                         {/* Service Entry Start */}
                         <div className="service-entry">
                             <p className="wow fadeInUp">Executive Leadership Coaching is designed for leaders, executives, entrepreneurs, and professionals who want to strengthen their leadership capabilities and create meaningful impact within their organizations. This coaching program focuses on enhancing strategic thinking, improving communication, and developing the confidence needed to lead teams effectively in today's fast-changing business environment.</p>
-                            <p className="wow fadeInUp">Our personalized coaching approach helps you identify leadership strengths, overcome challenges, and develop practical strategies to guide your team and organization toward sustainable success.</p>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">Our personalized coaching approach helps you identify leadership strengths, overcome challenges, and develop practical strategies to guide your team and organization toward sustainable success.</p>
                             
                             {/* Service Entry Info Start */}
                             <div className="service-entry-info-box">
-                                <h2 className="text-anime-style-3">What you will gain this coaching</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">What you will gain this coaching</AnimatedText>
                                 <p className="wow fadeInUp">Our coaching process is designed to help leaders develop the skills needed to manage complex challenges while maintaining focus on their strategic goals.</p>
                                 
                                 {/* Service Entry Benefit Box Start */}
-                                <div className="service-benefit-box wow fadeInUp">
+                                <div className="service-benefit-box wow fadeInUp" data-wow-delay="0.2s">
                                     <h3>Key benefits include:</h3>
                                     <ul>
                                         <li>Improved leadership confidence &amp; presence</li>
@@ -137,7 +138,7 @@ return (<>
 
                             {/* Service Focus Box Start */}
                             <div className="service-focus-box">
-                                <h2 className="text-anime-style-3">Key areas of focus</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">Key areas of focus</AnimatedText>
                                 <p className="wow fadeInUp">Our coaching focuses on the essential leadership skills needed to succeed in today's dynamic professional environment. We help you strengthen strategic thinking, improve communication, enhance team management abilities, and develop emotional intelligence. </p>
                                 
                                 {/* Service Focus Item List Start */}
@@ -172,7 +173,7 @@ return (<>
                                                 <img src="/images/service-focus-image-2.jpg" alt="" />
                                             </figure>
                                         </div>
-                                        <div className="service-focus-content-box wow fadeInUp">
+                                        <div className="service-focus-content-box wow fadeInUp" data-wow-delay="0.2s">
                                             <div className="service-focus-item-header">
                                                 <div className="icon-box">
                                                     <img src="/images/icon-service-focus-item-2.svg" alt="" />
@@ -194,7 +195,7 @@ return (<>
 
                             {/* Service Process Box Start */}
                             <div className="service-process-box">
-                                <h2 className="text-anime-style-3">Our coaching process</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">Our coaching process</AnimatedText>
                                 <p className="wow fadeInUp">Our coaching process is designed to provide clear guidance, practical strategies, and continuous support throughout your growth journey.</p>
                                 
                                 {/* Service Process Body Box Start */}
@@ -214,7 +215,7 @@ return (<>
                                         {/* Service Process Item End */}
                                         
                                         {/* Service Process Item Start */}
-                                        <div className="service-process-item wow fadeInUp">
+                                        <div className="service-process-item wow fadeInUp" data-wow-delay="0.2s">
                                             <div className="service-process-item-no">
                                                 <span>02</span>
                                             </div>
@@ -226,7 +227,7 @@ return (<>
                                         {/* Service Process Item End */}
                                         
                                         {/* Service Process Item Start */}
-                                        <div className="service-process-item wow fadeInUp">
+                                        <div className="service-process-item wow fadeInUp" data-wow-delay="0.4s">
                                             <div className="service-process-item-no">
                                                 <span>03</span>
                                             </div>
@@ -262,7 +263,7 @@ return (<>
                         <div className="page-single-faqs">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
                             
@@ -277,7 +278,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -285,7 +286,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -293,7 +294,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -301,7 +302,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>

@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Daniel brooks</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Daniel brooks</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -61,7 +62,7 @@ return (<>
                         {/* Team Single Image End */}
 
                         {/* Sidebar CTA Box Start */}
-                        <div className="sidebar-cta-box wow fadeInUp">
+                        <div className="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
                             {/* Sidebar CTA Box Image Start */}
                             <div className="sidebar-cta-box-image">
                                 <figure className="image-anime">
@@ -110,13 +111,13 @@ return (<>
                         <div className="team-member-about">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">About daniel brooks</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">About daniel brooks</AnimatedText>
                                 <p className="wow fadeInUp">Daniel Brooks is a dedicated Business Strategy Coach with a passion for helping entrepreneurs, professionals, and business leaders achieve sustainable growth. With years of experience in business development and leadership coaching, Daniel focuses on guiding clients toward clearer strategies.</p>
                             </div>
                             {/* Section Title End */}                    
 
                             {/* Team Contact List Box Start */}
-                            <div className="team-contact-list-box wow fadeInUp">
+                            <div className="team-contact-list-box wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="team-contact-list-box-title">
                                     <h3>Contact Info:</h3>
                                 </div>
@@ -184,7 +185,7 @@ return (<>
                         <div className="team-member-expertise">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Areas of expertise</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Areas of expertise</AnimatedText>
                                 <p className="wow fadeInUp">Areas of Expertise reflect the key skills and knowledge Daniel brings to his coaching practice. His expertise focuses on business strategy, leadership development, productivity improvement, and goal-focused planning.</p>
                             </div>
                             {/* Section Title End */}
@@ -231,7 +232,7 @@ return (<>
                         <div className="team-member-experience">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">My expertise / specialties</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">My expertise / specialties</AnimatedText>
                                 <p className="wow fadeInUp">With years of experience in the insurance industry, I specialize in providing personalized guidance and solutions tailored to each client's unique needs. My expertise covers policy advisory, claims assistance, risk assessment, and financial planning, ensuring that clients receive comprehensive support at every step.</p>
                             </div>
                             {/* Section Title End */}
@@ -246,21 +247,21 @@ return (<>
                                 {/* Member Experience Item End */}
 
                                 {/* Member Experience Item Start */}
-                                <div className="member-experience-item wow fadeInUp">
+                                <div className="member-experience-item wow fadeInUp" data-wow-delay="0.2s">
                                     <h3>Vision Edge Solutions - 2018 - 2021</h3>
                                     <p>Business Development Manager</p>
                                 </div>
                                 {/* Member Experience Item End */}
 
                                 {/* Member Experience Item Start */}
-                                <div className="member-experience-item wow fadeInUp">
+                                <div className="member-experience-item wow fadeInUp" data-wow-delay="0.4s">
                                     <h3>Next Level Enterprises - 2016 - 2018</h3>
                                     <p>Leadership &amp; Strategy Consultant</p>
                                 </div>
                                 {/* Member Experience Item End */}
 
                                 {/* Member Experience Item Start */}
-                                <div className="member-experience-item wow fadeInUp">
+                                <div className="member-experience-item wow fadeInUp" data-wow-delay="0.6s">
                                     <h3>Elevate Strategy Firm - 2010 - 2012</h3>
                                     <p>Business Strategy Manager</p>
                                 </div>
@@ -274,13 +275,13 @@ return (<>
                         <div className="contact-us-form team-contact-form">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Contact daniel today</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Contact daniel today</AnimatedText>
                                 <p className="wow fadeInUp">Reach out to Daniel today to start your journey toward clearer strategies and stronger business growth. Whether you need guidance, support.</p>
                             </div>
                             {/* Section Title End */}
 
                             {/* Contact Form Start */}
-                            <DemoForm id="contactForm" action="#" method="POST" className="contact-form wow fadeInUp">
+                            <DemoForm id="contactForm" action="#" method="POST" className="contact-form wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="row">
                                     <div className="form-group col-md-6 mb-4">
                                         <input type="text" name="fname" className="form-control" id="fname" placeholder="Enter First Name *" required aria-label="Enter First Name *" />

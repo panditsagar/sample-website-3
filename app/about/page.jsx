@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">About us</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">About us</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -122,13 +123,13 @@ return (<>
                         {/* Section Title Start */}
                         <div className="section-title">
                             <span className="section-sub-title wow fadeInUp">About Us</span>
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Empowering growth in life and business</h2>
-                            <p className="wow fadeInUp">We help individuals and entrepreneurs unlock their true potential by aligning personal clarity with professional strategy.</p>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Empowering growth in life and business</AnimatedText>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">We help individuals and entrepreneurs unlock their true potential by aligning personal clarity with professional strategy.</p>
                         </div>
                         {/* Section Title End */}
                         
                         {/* About Us Item List Start */}
-                        <div className="about-us-item-list wow fadeInUp">
+                        <div className="about-us-item-list wow fadeInUp" data-wow-delay="0.4s">
                             {/* About Us Item Start */}
                             <div className="about-us-item">
                                 <div className="icon-box">
@@ -156,7 +157,7 @@ return (<>
                         {/* About Us Item List End */}
 
                         {/* About Us Body Start */}
-                        <div className="about-us-body wow fadeInUp">
+                        <div className="about-us-body wow fadeInUp" data-wow-delay="0.6s">
                             {/* About Us Body Item Start */}
                             <div className="about-us-body-item">
                                 <h3>“We empower ambitious individuals and entrepreneurs to gain clarity, build confidence, and create lasting success in life and business.”</h3>
@@ -166,7 +167,7 @@ return (<>
                         {/* About Us Body End */}
 
                         {/* About Us Button Start */}
-                        <div className="about-us-btn wow fadeInUp">
+                        <div className="about-us-btn wow fadeInUp" data-wow-delay="0.8s">
                             <Link href="/contact" className="btn-default">Contact Us Now</Link>
                         </div>
                         {/* About Us Button End */}
@@ -186,8 +187,8 @@ return (<>
                     {/* Section Title Start */}
                     <div className="section-title section-title-center">
                         <span className="section-sub-title wow fadeInUp">Our Approach</span>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">Our proven coaching method</h2>
-                        <p className="wow fadeInUp">Our proven coaching method combines practical strategies, mindset development, and personalized guidance to help you achieve meaningful results.</p>
+                        <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Our proven coaching method</AnimatedText>
+                        <p className="wow fadeInUp" data-wow-delay="0.2s">Our proven coaching method combines practical strategies, mindset development, and personalized guidance to help you achieve meaningful results.</p>
                     </div>
                     {/* Section Title End */}
                 </div>
@@ -220,7 +221,7 @@ return (<>
                             {/* Approch item End */}
 
                             {/* Approch item Start */}
-                            <div className="approach-item wow fadeInUp">
+                            <div className="approach-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div className="icon-box">
                                     <img src="/images/icon-approach-item-2.svg" alt="" />
                                 </div>
@@ -232,7 +233,7 @@ return (<>
                             {/* Approch item End */}
 
                             {/* Approch item Start */}
-                            <div className="approach-item wow fadeInUp">
+                            <div className="approach-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div className="icon-box">
                                     <img src="/images/icon-approach-item-3.svg" alt="" />
                                 </div>
@@ -260,8 +261,8 @@ return (<>
                     {/* Section Title Start */}
                     <div className="section-title section-title-center">
                         <span className="section-sub-title wow fadeInUp">Our Benefits</span>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">Benefits of our coaching</h2>
-                        <p className="wow fadeInUp">Our coaching provides the guidance, clarity, and support you need to achieve meaningful personal and professional growth through personalized strategies.</p>
+                        <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Benefits of our coaching</AnimatedText>
+                        <p className="wow fadeInUp" data-wow-delay="0.2s">Our coaching provides the guidance, clarity, and support you need to achieve meaningful personal and professional growth through personalized strategies.</p>
                     </div>
                     {/* Section Title End */}
                 </div>
@@ -298,7 +299,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Benefits Item Start */}
-                    <div className="benefits-item wow fadeInUp">
+                    <div className="benefits-item wow fadeInUp" data-wow-delay="0.2s">
                         {/* Benefits Item Header Start */}
                         <div className="benefit-item-header">
                             <div className="icon-box">
@@ -326,7 +327,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Benefits Item Start */}
-                    <div className="benefits-item wow fadeInUp">
+                    <div className="benefits-item wow fadeInUp" data-wow-delay="0.4s">
                         {/* Benefits Item Header Start */}
                         <div className="benefit-item-header">
                             <div className="icon-box">
@@ -354,7 +355,7 @@ return (<>
 
                 <div className="col-lg-12">
                     {/* Section Footer Text Start */}
-                    <div className="section-footer-text section-satisfy-img wow fadeInUp">
+                    <div className="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.2s">
                         {/* Satisfy Client Images Start */}
                         <div className="satisfy-client-images">
                             <div className="satisfy-client-image">
@@ -406,13 +407,13 @@ return (<>
                         <div className="intro-video-content">
                             {/* Section Title Start */}
                             <div className="section-title section-title-center">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Watch how we guide clients toward real growth</h2>
-                                <p className="wow fadeInUp">Watch how our coaching approach helps clients gain clarity, build confidence, and take meaningful steps toward their goals.</p>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Watch how we guide clients toward real growth</AnimatedText>
+                                <p className="wow fadeInUp" data-wow-delay="0.2s">Watch how our coaching approach helps clients gain clarity, build confidence, and take meaningful steps toward their goals.</p>
                             </div>
                             {/* Section Title End */}
 
                             {/* Intro Video Button Start */}
-                            <div className="intro-video-btn wow fadeInUp">
+                            <div className="intro-video-btn wow fadeInUp" data-wow-delay="0.4s">
                                 <Link href="/contact" className="btn-default btn-highlighted">Get Consultation</Link>
                             </div>
                             {/* Intro Video Button End */}
@@ -484,8 +485,8 @@ return (<>
                         {/* Section Title Start */}
                         <div className="section-title">
                             <span className="section-sub-title wow fadeInUp">Our Expertise</span>
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Proven expertise in life and business coaching</h2>
-                            <p className="wow fadeInUp">With years of hands-on experience guiding individuals, entrepreneurs, and leaders, we bring practical insight and results-driven strategies.</p>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Proven expertise in life and business coaching</AnimatedText>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">With years of hands-on experience guiding individuals, entrepreneurs, and leaders, we bring practical insight and results-driven strategies.</p>
                         </div>
                         {/* Section Title End */}
 
@@ -526,7 +527,7 @@ return (<>
                         {/* Expertise Body End */}
 
                         {/* Expertise Button Start */}
-                        <div className="expertise-btn wow fadeInUp">
+                        <div className="expertise-btn wow fadeInUp" data-wow-delay="0.4s">
                             <Link href="/contact" className="btn-default">contact us</Link>
                         </div>
                         {/* Expertise Button End */}
@@ -584,13 +585,13 @@ return (<>
                         {/* Section Title Start */}
                         <div className="section-title section-title-center">
                             <span className="section-sub-title wow fadeInUp">How It Work</span>
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">How our coaching process delivers results</h2>
-                            <p className="wow fadeInUp">Our coaching process is structured, personalized, and action-oriented to measurable progress we begin by gaining deep clarity on your goals.</p>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">How our coaching process delivers results</AnimatedText>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">Our coaching process is structured, personalized, and action-oriented to measurable progress we begin by gaining deep clarity on your goals.</p>
                         </div>
                         {/* Section Title End */}
 
                         {/* How Work Button Start */}
-                        <div className="how-work-btn wow fadeInUp">
+                        <div className="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
                             <Link href="/contact" className="btn-default btn-highlighted">Get Consultation</Link>
                         </div>
                         {/* How Work Button End */}
@@ -634,7 +635,7 @@ return (<>
                         {/* How Work Item End */}
 
                         {/* How Work Item Start */}
-                        <div className="how-work-item wow fadeInUp">
+                        <div className="how-work-item wow fadeInUp" data-wow-delay="0.2s">
                             {/* How Work Item Header Start */}
                             <div className="how-work-item-header">
                                 <div className="icon-box">
@@ -656,7 +657,7 @@ return (<>
                         {/* How Work Item End */}
 
                         {/* How Work Item Start */}
-                        <div className="how-work-item wow fadeInUp">
+                        <div className="how-work-item wow fadeInUp" data-wow-delay="0.4s">
                             {/* How Work Item Header Start */}
                             <div className="how-work-item-header">
                                 <div className="icon-box">
@@ -692,8 +693,8 @@ return (<>
                     {/* Section Title Start */}
                     <div className="section-title section-title-center">
                         <span className="section-sub-title wow fadeInUp">Our Team</span>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">Meet the coaching experts</h2>
-                        <p className="wow fadeInUp">Meet the passionate professionals dedicated to guiding your personal and professional growth our coaching experts bring experience, insight.</p>
+                        <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Meet the coaching experts</AnimatedText>
+                        <p className="wow fadeInUp" data-wow-delay="0.2s">Meet the passionate professionals dedicated to guiding your personal and professional growth our coaching experts bring experience, insight.</p>
                     </div>
                     {/* Section Title End */}
                 </div>
@@ -730,7 +731,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>
@@ -758,7 +759,7 @@ return (<>
 
                 <div className="col-xl-4 col-md-6">
                     {/* Team Item Start */}
-                    <div className="team-item wow fadeInUp">
+                    <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
                         <div className="team-item-image">
                             <Link href="/team-single" data-cursor-text="View">
                                 <figure>
@@ -786,7 +787,7 @@ return (<>
 
                 <div className="col-lg-12">
                     {/* Section Footer Text Start */}
-                    <div className="section-footer-text section-satisfy-img wow fadeInUp">
+                    <div className="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.6s">
                         {/* Satisfy Client Images Start */}
                         <div className="satisfy-client-images">
                             <div className="satisfy-client-image">
@@ -816,7 +817,7 @@ return (<>
                     {/* Section Title Start */}
                     <div className="section-title section-title-center">
                         <span className="section-sub-title wow fadeInUp">Testimonials</span>
-                        <h2 className="text-anime-style-3" data-cursor="-opaque">Client voices celebrating real transformation</h2>
+                        <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Client voices celebrating real transformation</AnimatedText>
                     </div>
                     {/* Section Title End */}
                 </div>
@@ -861,7 +862,7 @@ return (<>
 
                 <div className="col-xl-8 col-md-6">
                     {/* Testimonial Slider Start */}
-                    <div className="testimonial-slider wow fadeInUp">
+                    <div className="testimonial-slider wow fadeInUp" data-wow-delay="0.2s">
                         <Carousel variant="testimonials">
                                 {/* Testimonial Slide Start */}
                                 <div className="swiper-slide">
@@ -965,7 +966,7 @@ return (<>
 
                 <div className="col-lg-12">
                     {/* Section Footer Text Start */}
-                    <div className="section-footer-text section-satisfy-img wow fadeInUp">
+                    <div className="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.4s">
                         {/* Satisfy Client Images Start */}
                         <div className="satisfy-client-images">
                             <div className="satisfy-client-image">
@@ -1008,12 +1009,12 @@ return (<>
                         {/* Section Title Start */}
                         <div className="section-title">
                             <span className="section-sub-title wow fadeInUp">Frequently Asked Questions</span>
-                            <h2 className="text-anime-style-3" data-cursor="-opaque">Common questions about our coaching process</h2>
+                            <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Common questions about our coaching process</AnimatedText>
                         </div>
                         {/* Section Title End */}
 
                         {/* Faqs Body Start */}
-                        <div className="faqs-content-list wow fadeInUp">
+                        <div className="faqs-content-list wow fadeInUp" data-wow-delay="0.2s">
                             <ul>
                                 <li>Mindset transformation to overcome fear and self doubt</li>
                                 <li>Strategic business planning for sustainable long term growth</li>
@@ -1023,7 +1024,7 @@ return (<>
                         {/* Faqs Body End */}
 
                         {/* FAQ'S Content Button Start */}
-                        <div className="faqs-content-btn wow fadeInUp">
+                        <div className="faqs-content-btn wow fadeInUp" data-wow-delay="0.4s">
                             <Link href="/faqs" className="btn-default">View All Questions</Link>
                         </div>
                         {/* FAQ'S Content Button End */}
@@ -1043,7 +1044,7 @@ return (<>
                         {/* FAQ Item End */}
 
                         {/* FAQ Item Start */}
-                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"}>
+                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"} data-wow-delay="0.2s">
                                 <div className="accordion-body">
                                     <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                 </div>
@@ -1051,7 +1052,7 @@ return (<>
                         {/* FAQ Item End */}
 
                         {/* FAQ Item Start */}
-                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"}>
+                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"} data-wow-delay="0.4s">
                                 <div className="accordion-body">
                                     <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                 </div>
@@ -1059,7 +1060,7 @@ return (<>
                         {/* FAQ Item End */}
 
                         {/* FAQ Item Start */}
-                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"}>
+                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"} data-wow-delay="0.6s">
                                 <div className="accordion-body">
                                     <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                 </div>
@@ -1067,7 +1068,7 @@ return (<>
                         {/* FAQ Item End */}
 
                         {/* FAQ Item Start */}
-                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"}>
+                        <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"} data-wow-delay="0.8s">
                                 <div className="accordion-body">
                                     <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                 </div>

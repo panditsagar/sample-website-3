@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -56,7 +57,7 @@ return (<>
                         {/* Page Category List End */}
 
                         {/* Sidebar CTA Box Start */}
-                        <div className="sidebar-cta-box wow fadeInUp">
+                        <div className="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
                             {/* Sidebar CTA Box Image Start */}
                             <div className="sidebar-cta-box-image">
                                 <figure className="image-anime">
@@ -105,7 +106,7 @@ return (<>
                         <div className="page-single-faqs" id="faq_1">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-2" data-cursor="-opaque">General coaching questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-2" data-cursor="-opaque">General coaching questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
 
@@ -120,7 +121,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                         </div>
@@ -128,7 +129,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                         </div>
@@ -136,7 +137,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                         </div>
@@ -144,7 +145,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction. </p>
                                         </div>
@@ -159,7 +160,7 @@ return (<>
                         <div className="page-single-faqs" id="faq_2">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-2" data-cursor="-opaque">Coaching process questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-2" data-cursor="-opaque">Coaching process questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
 
@@ -174,7 +175,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse7" headingId="heading7" title={"2. How long does a coaching program last?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse7" headingId="heading7" title={"2. How long does a coaching program last?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Our coaching process begins with a discovery session, followed by a personalized growth plan. Regular coaching sessions help implement strategies, track progress, and achieve measurable results.</p>
                                         </div>
@@ -182,7 +183,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse8" headingId="heading8" title={"3. How often are coaching sessions scheduled?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse8" headingId="heading8" title={"3. How often are coaching sessions scheduled?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Our coaching process begins with a discovery session, followed by a personalized growth plan. Regular coaching sessions help implement strategies, track progress, and achieve measurable results.</p>
                                         </div>
@@ -190,7 +191,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse9" headingId="heading9" title={"4. What goals can coaching help me achieve?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse9" headingId="heading9" title={"4. What goals can coaching help me achieve?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Our coaching process begins with a discovery session, followed by a personalized growth plan. Regular coaching sessions help implement strategies, track progress, and achieve measurable results.</p>
                                         </div>
@@ -198,7 +199,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse10" headingId="heading10" title={"5. How do I know if coaching is right for me?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse10" headingId="heading10" title={"5. How do I know if coaching is right for me?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Our coaching process begins with a discovery session, followed by a personalized growth plan. Regular coaching sessions help implement strategies, track progress, and achieve measurable results.</p>
                                         </div>
@@ -213,7 +214,7 @@ return (<>
                         <div className="page-single-faqs" id="faq_3">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-2" data-cursor="-opaque">Session &amp; format questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-2" data-cursor="-opaque">Session &amp; format questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
 
@@ -228,7 +229,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse12" headingId="heading12" title={"2. How long is each coaching session?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse12" headingId="heading12" title={"2. How long is each coaching session?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Most coaching sessions are conducted online via video calls, allowing clients from around the world to participate.</p>
                                         </div>
@@ -236,7 +237,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse13" headingId="heading13" title={"3. Do you offer group coaching programs?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse13" headingId="heading13" title={"3. Do you offer group coaching programs?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Most coaching sessions are conducted online via video calls, allowing clients from around the world to participate.</p>
                                         </div>
@@ -244,7 +245,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse14" headingId="heading14" title={"4. Do I need to prepare before a coaching session?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse14" headingId="heading14" title={"4. Do I need to prepare before a coaching session?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Most coaching sessions are conducted online via video calls, allowing clients from around the world to participate.</p>
                                         </div>
@@ -252,7 +253,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse15" headingId="heading15" title={"5. Can coaching help improve my leadership skills?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse15" headingId="heading15" title={"5. Can coaching help improve my leadership skills?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Most coaching sessions are conducted online via video calls, allowing clients from around the world to participate.</p>
                                         </div>
@@ -267,7 +268,7 @@ return (<>
                         <div className="page-single-faqs" id="faq_4">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-2" data-cursor="-opaque">Pricing &amp; packages questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-2" data-cursor="-opaque">Pricing &amp; packages questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
                             
@@ -282,7 +283,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse17" headingId="heading17" title={"2. Do you offer a free consultation?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse17" headingId="heading17" title={"2. Do you offer a free consultation?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>We offer flexible coaching plans designed for individuals, professionals, entrepreneurs, and executives.</p>
                                         </div>
@@ -290,7 +291,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse18" headingId="heading18" title={"3. Can I upgrade my coaching plan later?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse18" headingId="heading18" title={"3. Can I upgrade my coaching plan later?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>We offer flexible coaching plans designed for individuals, professionals, entrepreneurs, and executives.</p>
                                         </div>
@@ -298,7 +299,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse19" headingId="heading19" title={"4. Is coaching suitable for entrepreneurs and startups?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse19" headingId="heading19" title={"4. Is coaching suitable for entrepreneurs and startups?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>We offer flexible coaching plans designed for individuals, professionals, entrepreneurs, and executives.</p>
                                         </div>
@@ -306,7 +307,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse20" headingId="heading20" title={"5. Will coaching help with time management?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse20" headingId="heading20" title={"5. Will coaching help with time management?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>We offer flexible coaching plans designed for individuals, professionals, entrepreneurs, and executives.</p>
                                         </div>
@@ -321,7 +322,7 @@ return (<>
                         <div className="page-single-faqs" id="faq_5">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Result &amp; expectations questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Result &amp; expectations questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
                             
@@ -336,7 +337,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse22" headingId="heading22" title={"2. Is coaching confidential?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse22" headingId="heading22" title={"2. Is coaching confidential?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Results vary depending on commitment and goals, but many clients begin seeing improvements within the first few sessions.</p>
                                         </div>
@@ -344,7 +345,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse23" headingId="heading23" title={"3. What if I miss a coaching session?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse23" headingId="heading23" title={"3. What if I miss a coaching session?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Results vary depending on commitment and goals, but many clients begin seeing improvements within the first few sessions.</p>
                                         </div>
@@ -352,7 +353,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse24" headingId="heading24" title={"4. What happens during the first coaching session?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse24" headingId="heading24" title={"4. What happens during the first coaching session?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Results vary depending on commitment and goals, but many clients begin seeing improvements within the first few sessions.</p>
                                         </div>
@@ -360,7 +361,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse25" headingId="heading25" title={"5. How do I measure progress in coaching?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse25" headingId="heading25" title={"5. How do I measure progress in coaching?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Results vary depending on commitment and goals, but many clients begin seeing improvements within the first few sessions.</p>
                                         </div>

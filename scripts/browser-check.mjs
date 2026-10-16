@@ -11,7 +11,7 @@ const browser = await chromium.launch({ executablePath, headless: true });
 const failures = [];
 const checks = [];
 try {
-  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce' });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'no-preference' });
   // External YouTube and Maps embeds are deliberately excluded from offline QA.
   await context.route('**/*', route => {
     const url = new URL(route.request().url());
@@ -54,6 +54,7 @@ try {
 
   await page.goto(`${base}/faqs`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
+  await page.locator('[data-bs-target="#collapse2"]').evaluate(element => element.scrollIntoView({ block: 'center' }));
   await page.locator('[data-bs-target="#collapse2"]').click();
   await page.locator('#collapse2.show').waitFor();
   assert.equal(await page.locator('[data-bs-target="#collapse2"]').getAttribute('aria-expanded'), 'true');
@@ -61,6 +62,7 @@ try {
 
   await page.goto(`${base}/image-gallery`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
+  await page.locator('.gallery-items').evaluate(element => element.scrollIntoView({ block: 'start' }));
   await page.locator('.gallery-items a').first().click();
   await page.locator('.mfp-img').waitFor({ state: 'visible' });
   await page.keyboard.press('Escape');
@@ -69,6 +71,7 @@ try {
 
   await page.goto(`${base}/contact`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
+  await page.locator('#contactForm').evaluate(element => element.scrollIntoView({ block: 'center' }));
   await page.locator('#contactForm #fname').fill('Demo');
   await page.locator('#contactForm #lname').fill('Visitor');
   await page.locator('#contactForm #phone').fill('5550123456');
@@ -81,6 +84,7 @@ try {
 
   await page.goto(`${base}/book-appointment`, { waitUntil: 'load' });
   await page.locator('.preloader').waitFor({ state: 'hidden' });
+  await page.locator('#appointmentForm').evaluate(element => element.scrollIntoView({ block: 'center' }));
   await page.locator('#appointmentForm #fname').fill('Demo');
   await page.locator('#appointmentForm #lname').fill('Visitor');
   await page.locator('#appointmentForm #phone').fill('5550123456');

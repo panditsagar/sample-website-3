@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">How to Create a Balanced...</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">How to Create a Balanced...</AnimatedText>
                         <nav className="wow fadeInUp">
                             <div className="post-single-meta wow fadeInUp">
                                 <ol className="breadcrumb">
@@ -57,19 +58,19 @@ return (<>
                         <div className="post-entry">
                             <p className="wow fadeInUp">Maintaining a balanced work-life routine is essential for long-term success, productivity, and personal well-being. In today's fast-paced world, many professionals struggle to manage their careers while also making time for family, health, and personal interests. Creating a balanced routine helps reduce stress, improve focus, and lead a more fulfilling life.</p>
 
-                            <p className="wow fadeInUp">Creating a balanced work-life routine is essential for maintaining both professional success and personal well-being. In today's busy world, many individuals struggle to manage work responsibilities while also making time for family, health, and personal interests. By organizing your daily schedule, setting clear priorities, and establishing healthy boundaries.</p>
+                            <p className="wow fadeInUp" data-wow-delay="0.2s">Creating a balanced work-life routine is essential for maintaining both professional success and personal well-being. In today's busy world, many individuals struggle to manage work responsibilities while also making time for family, health, and personal interests. By organizing your daily schedule, setting clear priorities, and establishing healthy boundaries.</p>
                             
-                            <blockquote className="wow fadeInUp">
+                            <blockquote className="wow fadeInUp" data-wow-delay="0.4s">
                                 <p>Build a balanced work-life routine that supports your professional success and personal well-being. By managing time wisely, setting priorities, and maintaining healthy boundaries, you can stay productive, reduce stress, and enjoy a happier, more fulfilling lifestyle. </p>
                             </blockquote>
 
-                            <p className="wow fadeInUp">A well-balanced routine helps reduce stress, improve focus, and increase overall satisfaction in both your career and personal life. Taking time for rest, hobbies, and self-care allows you to recharge your energy and return to work with greater motivation and clarity. With the right approach, achieving work-life balance becomes a sustainable way to live and work more effectively.</p>
+                            <p className="wow fadeInUp" data-wow-delay="0.6s">A well-balanced routine helps reduce stress, improve focus, and increase overall satisfaction in both your career and personal life. Taking time for rest, hobbies, and self-care allows you to recharge your energy and return to work with greater motivation and clarity. With the right approach, achieving work-life balance becomes a sustainable way to live and work more effectively.</p>
 
-                            <h2 className="wow fadeInUp">Why work-life balance matters</h2>
+                            <h2 className="wow fadeInUp" data-wow-delay="0.8s">Why work-life balance matters</h2>
 
-                            <p className="wow fadeInUp">When work begins to dominate your time and energy, it can lead to burnout, decreased motivation, and reduced productivity. A balanced routine helps you maintain mental clarity, emotional stability, and physical well-being.</p>
+                            <p className="wow fadeInUp" data-wow-delay="1s">When work begins to dominate your time and energy, it can lead to burnout, decreased motivation, and reduced productivity. A balanced routine helps you maintain mental clarity, emotional stability, and physical well-being.</p>
 
-                            <ul className="wow fadeInUp">
+                            <ul className="wow fadeInUp" data-wow-delay="1.2s">
                                 <li>Improves mental health by reducing stress and preventing long term professional burnout.</li>
                                 <li>Increases workplace productivity by improving focus motivation and overall daily efficiency.</li>
                                 <li>Prevents exhaustion by balancing professional responsibilities with personal relaxation.</li>
@@ -77,7 +78,7 @@ return (<>
                                 <li>Promotes better time management skills for handling tasks efficiently and effectively.</li>
                             </ul>
 
-                            <p className="wow fadeInUp">Maintaining this balance helps improve both physical and emotional health. When you take time for rest, family, hobbies, and self-care, your mind becomes clearer and your ability to handle challenges improves. </p>
+                            <p className="wow fadeInUp" data-wow-delay="1.4s">Maintaining this balance helps improve both physical and emotional health. When you take time for rest, family, hobbies, and self-care, your mind becomes clearer and your ability to handle challenges improves. </p>
                         </div>
                         {/* Post Entry End */}
 
@@ -86,7 +87,7 @@ return (<>
                             <div className="row align-items-center">
                                 <div className="col-lg-8">
                                     {/* Post Tags Start */}
-                                    <div className="post-tags wow fadeInUp">
+                                    <div className="post-tags wow fadeInUp" data-wow-delay="0.5s">
                                         <span className="tag-links">
                                             Tags:
                                             <a href="#">Balance</a>
@@ -99,7 +100,7 @@ return (<>
 
                                 <div className="col-lg-4">
                                     {/* Post Social Links Start */}
-                                    <div className="post-social-sharing wow fadeInUp">
+                                    <div className="post-social-sharing wow fadeInUp" data-wow-delay="0.5s">
                                         <ul>
                                             <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
                                             <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>

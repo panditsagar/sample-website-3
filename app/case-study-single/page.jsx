@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { Accordion, AccordionItem, Carousel, Counter, DemoForm, Gallery, VideoLink } from "@/components/interactive";
 
@@ -21,7 +22,7 @@ return (<>
                 <div className="col-lg-12">
                     {/* Page Header Box Start */}
                     <div className="page-header-box">
-                        <h1 className="text-anime-style-3" data-cursor="-opaque">Clarity to consistent results</h1>
+                        <AnimatedText as="h1" className="text-anime-style-3" data-cursor="-opaque">Clarity to consistent results</AnimatedText>
                         <nav className="wow fadeInUp">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/">home</Link></li>
@@ -58,7 +59,7 @@ return (<>
                         {/* Page Category List End */}
                         
                         {/* Sidebar CTA Box Start */}
-                        <div className="sidebar-cta-box wow fadeInUp">
+                        <div className="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
                             {/* Sidebar CTA Box Image Start */}
                             <div className="sidebar-cta-box-image">
                                 <figure className="image-anime">
@@ -117,11 +118,11 @@ return (<>
                             
                             {/* Case Study Approach Box Start */}
                             <div className="case-study-approach-box">
-                                <h2 className="text-anime-style-3">The coaching approach</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">The coaching approach</AnimatedText>
                                 <p className="wow fadeInUp">Our coaching approach focuses on creating clarity, structure, and actionable strategies to help clients achieve consistent progress. Through personalized sessions, we identify key goals, address challenges, and develop practical plans that support growth.</p>
                                 
                                 {/* Case Study Approach List Start */}
-                                <div className="case-study-approach-list wow fadeInUp">
+                                <div className="case-study-approach-list wow fadeInUp" data-wow-delay="0.2s">
                                     <ul>
                                         <li>Identifying core goals and defining vision</li>
                                         <li>developed strategic action plan consistent</li>
@@ -135,7 +136,7 @@ return (<>
                             
                             {/* Case Study Results Box Start */}
                             <div className="case-study-results-box">
-                                <h2 className="text-anime-style-3">Clarity to consistent results</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">Clarity to consistent results</AnimatedText>
                                 <p className="wow fadeInUp">The Clarity to Consistent Results case study highlights how focused coaching and strategic guidance helped a professional transform uncertainty into clear direction and measurable success.</p>
                                 
                                 {/* Case Study Results Body Start */}
@@ -155,7 +156,7 @@ return (<>
                                         {/* Case Study Result Item End */}
                                         
                                         {/* Case Study Result Item Start */}
-                                        <div className="case-study-result-item wow fadeInUp">
+                                        <div className="case-study-result-item wow fadeInUp" data-wow-delay="0.2s">
                                             <div className="icon-box">
                                                 <img src="/images/icon-case-study-result-2.svg" alt="" />
                                             </div>
@@ -167,7 +168,7 @@ return (<>
                                         {/* Case Study Result Item End */}
                                         
                                         {/* Case Study Result Item Start */}
-                                        <div className="case-study-result-item wow fadeInUp">
+                                        <div className="case-study-result-item wow fadeInUp" data-wow-delay="0.4s">
                                             <div className="icon-box">
                                                 <img src="/images/icon-case-study-result-3.svg" alt="" />
                                             </div>
@@ -181,7 +182,7 @@ return (<>
                                     {/* Case Study Result Item List End */}
                                     
                                     {/* Case Study Result List Start */}
-                                    <div className="case-study-result-list wow fadeInUp">
+                                    <div className="case-study-result-list wow fadeInUp" data-wow-delay="0.6s">
                                         <ul>
                                             <li>Better Time Management</li>
                                             <li>Strong Decision Making</li>
@@ -196,13 +197,13 @@ return (<>
                             
                             {/* Case Study Challenge Box Start */}
                             <div className="case-study-challenge-box">
-                                <h2 className="text-anime-style-3">The challenge</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3">The challenge</AnimatedText>
                                 <p className="wow fadeInUp">The obstacles and difficulties the client faced before coaching. It includes unclear goals, scattered priorities, inconsistent performance, and lack of structure or confidence.</p>
                                 
                                 {/* Case Study Challenge Item List Start */}
                                 <div className="case-study-challenge-item-list">
                                     {/* Case Study Challenge Item Start */}
-                                    <div className="case-study-challenge-item wow fadeInUp">
+                                    <div className="case-study-challenge-item wow fadeInUp" data-wow-delay="0.2s">
                                         <div className="case-study-challenge-image">
                                             <figure>
                                                 <img src="/images/case-study-challenge-image-1.jpg" alt="" />
@@ -216,7 +217,7 @@ return (<>
                                     {/* Case Study Challenge Item End */}
                                     
                                     {/* Case Study Challenge Item Start */}
-                                    <div className="case-study-challenge-item wow fadeInUp">
+                                    <div className="case-study-challenge-item wow fadeInUp" data-wow-delay="0.4s">
                                         <div className="case-study-challenge-image">
                                             <figure>
                                                 <img src="/images/case-study-challenge-image-2.jpg" alt="" />
@@ -239,7 +240,7 @@ return (<>
                         <div className="page-single-faqs">
                             {/* Section Title Start */}
                             <div className="section-title">
-                                <h2 className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</h2>
+                                <AnimatedText as="h2" className="text-anime-style-3" data-cursor="-opaque">Frequently asked questions</AnimatedText>
                             </div>
                             {/* Section Title End */}
                             
@@ -254,7 +255,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse2" headingId="heading2" title={"2. How does coaching improve business performance?"} data-wow-delay="0.2s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -262,7 +263,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse3" headingId="heading3" title={"3. How often are coaching sessions conducted?"} data-wow-delay="0.4s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -270,7 +271,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse4" headingId="heading4" title={"4. How do you track progress and performance?"} data-wow-delay="0.6s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>
@@ -278,7 +279,7 @@ return (<>
                                 {/* FAQ Item End */}
 
                                 {/* FAQ Item Start */}
-                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"}>
+                                <AccordionItem className="accordion-item wow fadeInUp" id="collapse5" headingId="heading5" title={"5. Do you provide support between sessions?"} data-wow-delay="0.8s">
                                         <div className="accordion-body">
                                             <p>Coaching helps you gain clarity about your goals, values, and purpose so you can move forward with confidence and direction.</p>
                                         </div>

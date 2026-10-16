@@ -11,6 +11,7 @@ import './next.css';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import PageEffects from '@/components/PageEffects';
+import Preloader from '@/components/Preloader';
 
 export const metadata = {
   title: 'Lifeon — Life and Business Coaching',
@@ -22,9 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Preloader />
         <SiteHeader />
-        <PageEffects><main id="main-content">{children}</main></PageEffects>
-        <SiteFooter />
+        <PageEffects><main id="main-content">{children}</main><SiteFooter /></PageEffects>
       </body>
     </html>
   );
